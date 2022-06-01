@@ -5,8 +5,9 @@ import { ProductListToolbar } from '../components/product/product-list-toolbar';
 import { ProductCard } from '../components/product/product-card';
 import { DashboardLayout } from '../components/dashboard-layout';
 
-const Products = () => (
-  <>
+const Products = () => {
+  return(
+    <>
     <Head>
       <title>
         Products | Material Kit
@@ -55,7 +56,9 @@ const Products = () => (
       </Container>
     </Box>
   </>
-);
+  )
+}
+ 
 
 Products.getLayout = (page) => (
   <DashboardLayout>
